@@ -1,0 +1,136 @@
+@import '../../styles/base.scss';
+
+.container {
+  background-color: $secondary-color;
+  min-height: 100vh;
+  padding: 1rem 5rem;
+
+  &__table {
+    height: 400px;
+    width: 100%;
+    padding-top: 5px;
+
+    .tableChild {
+      background-color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+
+      .title {
+        font-size: 15px;
+        color: $navbar-bg-color;
+        font-weight: 600;
+      }
+
+      .error {
+        font-size: 10px;
+        color: red;
+      }
+
+      .formName {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+
+        .titleName {
+          font-size: 15px;
+          font-weight: 500;
+          color: $text-primary-color;
+        }
+
+        .inputTextName {
+          box-sizing: border-box;
+          border-radius: 5px;
+          border: 1px solid $text-grey-color;
+          font-size: 15px;
+          width: 100%;
+          height: 40px;
+          padding-left: 1rem;
+        }
+      }
+
+      // Image
+      .formImage {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+
+        .titleImage {
+          font-size: 15px;
+          font-weight: 500;
+          color: $text-primary-color;
+        }
+
+        // .dragArea {
+        //   height: 150px;
+        //   border-radius: 5px;
+        //   border: 1px solid black;
+        // }
+
+        .inputTextImage {
+          width: 100%;
+          padding: 8px;
+          // box-sizing: border-box;
+          // border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+
+        .selectedImage {
+          width: 10%;
+          height: 100px;
+          object-fit: fill;
+        }
+      }
+
+      // Price
+      .formPrice {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+
+        .titlePrice {
+          font-size: 15px;
+          font-weight: 500;
+          color: $text-primary-color;
+        }
+
+        .inputTextPrice {
+          box-sizing: border-box;
+          border-radius: 5px;
+          border: 1px solid $text-grey-color;
+          font-size: 15px;
+          width: 100%;
+          height: 40px;
+          padding-left: 1rem;
+        }
+      }
+
+      .btnAdd {
+        display: flex;
+        justify-content: end;
+
+        .button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+          gap: 5px;
+          border: none;
+          width: 15%;
+          height: 40px;
+          margin-top: 10px;
+          border-radius: 5px;
+          background: $button-green;
+          cursor: pointer;
+          color: $text-white-color;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

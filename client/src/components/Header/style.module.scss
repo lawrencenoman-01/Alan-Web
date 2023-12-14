@@ -1,0 +1,12 @@
+@import '../../styles/base.scss';
+
+.container {
+  padding: 1rem 5rem;
+  color: $text-white-color;
+  background-color: $navbar-bg-color;
+
+  .title {
+    text-decoration: none;
+    color: $text-white-color;
+  }
+}

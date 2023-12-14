@@ -1,0 +1,42 @@
+@import '../../styles/base.scss';
+
+.container {
+  padding: 1rem 7rem;
+  color: $text-white-color;
+  background-color: $text-white-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+
+  .link {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    &__food,
+    &__transaksi {
+      text-decoration: none;
+      color: $text-primary-color;
+      font-size: 15px;
+      position: relative;
+
+      &:hover,
+      &.active {
+        color: $navbar-bg-color;
+        font-weight: bold;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        background-color: $navbar-bg-color;
+        transition: width 0.3s;
+      }
+
+      &:hover:after,
+      &.active:after {
+        width: 100%;
+      }
+    }
+  }
+}

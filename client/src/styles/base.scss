@@ -1,0 +1,12 @@
+@import "./color.scss";
+@import "./mixin-component.scss";
+@import "./fontStyle.scss";
+@import "./media.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary-font;
+  scroll-behavior: smooth;
+}

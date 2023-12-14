@@ -1,0 +1,64 @@
+@import '../../styles/base.scss';
+
+.container {
+  background-color: $secondary-color;
+  min-height: 100vh;
+  padding: 1rem 5rem;
+  position: relative;
+
+  &__title {
+    color: $text-grey-color;
+  }
+
+  &__table {
+    height: 400px;
+    width: 100%;
+    padding-top: 15px;
+
+    .tableChild {
+      background-color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+
+      .btnAdd {
+        text-decoration: none;
+
+        .button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+          gap: 5px;
+          border: none;
+          width: 15%;
+          height: 40px;
+          margin-top: 10px;
+          border-radius: 5px;
+          background: $navbar-bg-color;
+          cursor: pointer;
+          color: $text-white-color;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+
+      .image {
+        width: 20%;
+        height: 50px;
+        object-fit: fill;
+      }
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    padding-bottom: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
